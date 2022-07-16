@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<title>Interview Prep</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+</style>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-wide w3-padding w3-card">
+    <a href="index.html" class="w3-bar-item w3-button"><b>&#9650</b></a>
+    <a href="companies.php" class="w3-bar-item w3-button">Companies</a>
+    <a href="#about" class="w3-bar-item w3-button">Contact Us</a>
+   
+    <form action="search.php" method="GET">
+    <input class="w3-bar-item w3-border" size="40" type="text" placeholder="type here to search..." name="search">
+    <button class="w3-button w3-bar-item" type="submit" name="submit" value="search"><i class="fa fa-search"></i></button>
+    <!-- Float links to the right. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      
+  
+      <a href="logout.php" class="w3-bar-item w3-button">Logout</a>
+      
+    </div>
+  </div>
+</div>
+
+
+</form>
+</div>
+</div>
+<!-- Header -->
+<div class="w3-content" style="max-width:1500px">
+<header class="w3-panel w3-center " style="padding:64px 16px">
+  <img  src="logo.png" alt="Interview Prep Logo" width="25%" height="15%">
+ 
+  <h1>Giving You Skills For The Job Of Living</h1><br>
+  
+
+
+
+
+  </header>
+
+<div class="w3-row-padding " style="margin-bottom:64px">
+  <div class="w3-third">
+    <img src="i1.png" style="width:100%">
+    <img src="i6.png" style="width:100%">
+
+
+  </div>
+
+  <div class="w3-third">
+    <img src="i3.png" style="width:100%">
+    <img src="i4.png" style="width:100%">
+
+
+  </div>
+
+  <div class="w3-third">
+    <img src="i5.png" style="width:100%">    
+    <img src="i2.png" style="width:100%">
+
+  </div>
+</div>
+</div>
+<!-- Page content -->
+<div class="w3-content " style="max-width:1564px">
+
+  <!-- Project Section -->
+  <center>
+  <div class="w3-container w3-padding" >
+    <h1 class="w3-border-bottom w3-border-light-grey ">Testimonials</h1>
+  </div>
+  <hr></hr>
+  <p style="font-family:assistant;font-size:20px; font-weight:bold; margin-left:90px"></p>
+   <div class="w3-container" style="height:600px">
+  <img class="mySlides w3-animate-right" src="t1.png" style="width:50%; height:50%">
+  <img class="mySlides w3-animate-left" src="t2.png" style="width:50%; height:50%">
+  <img class="mySlides w3-animate-right" src="t3.png" style="width:50%;  height:50%">
+  <img class="mySlides w3-animate-left" src="t4.png" style="width:50%; height:50%">
+  
+  </div></center>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 3000);
+}
+</script>
+
+
+
+
+  <!-- About Section -->
+  <center>
+  <div class="w3-container w3-padding-32" id="about" >
+    <h1 class="w3-border-bottom w3-border-light-grey ">Connect</h1>
+  </div>
+</center>
+  
+
+
+
+<!-- End page content -->
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+
+	<table align="center" width="100%">
+	<tr>
+		<td> | <button class="dropbtn"> ABOUT </button> | </td>
+		<td> | <button class="dropbtn"> CONTACT US</button> |  
+    
+    
+  </div>
+</div> 
+</td>
+  		<td> | <button class="dropbtn"> FEEDBACK </button> | </td>
+  		<td> | <button class="dropbtn"> FOLLOW US</button> | </td>
+	</tr>
+
+	<tr>
+		<td><a href="about.html">About Us</a></td>
+		<td><a href="mailto: contact@interviewprep.com"><br>enquiry@interviewprep.com</a><br>
+    		Contact : +91-9004122633</td>
+		<td><a href="feedback.html">Give Feedback</a></td>
+		<td><a href="https://www.facebook.com/ayush.tiwari.5855594" class="fa fa-facebook" ></a>  Facebook
+			<br>
+			<a href="https://twitter.com/yush_69" class="fa fa-twitter"></a>  Twitter
+			<br>
+			<a href="https://www.linkedin.com/in/ayush-tiwari-33b65b19a/" class="fa fa-linkedin"></a>  LinkedIn
+			</tr>
+</table>
+	<p>Copyright &copy 2021 | All Rights Reserved <br> <center>Interview Prep Pvt. Ltd.</center></p>
+  
+</footer>
+
+</body>
+</html>
