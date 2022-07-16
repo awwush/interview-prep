@@ -77,7 +77,7 @@ else if(($row["User_id"] == $email) and ($row["Password"] == $pswd)){
   $_SESSION["id"] = $row["User_id"];
   $_SESSION["name"] = $row["Name"];
   $_SESSION["valid"] = true;  
-  echo '<div><h1 style="font-family:sans-serif;color:coral"><center><br><br><br>Login Successful<br>Welcome '.$_SESSION["name"].'!<br>Go to <br><br><a style="color:white" href="index.html"><button class="button" ><span>
+  echo '<div><h1 style="font-family:sans-serif;color:coral"><center><br><br><br>Login Successful<br>Welcome '.$_SESSION["name"].'!<br>Go to <br><br><a style="color:white" href="dashboard.html"><button class="button" ><span>
 <i class="fa fa-home"></i>  Home</span></button></a></center></h1></div>';
 }
 else {
