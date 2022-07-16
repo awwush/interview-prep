@@ -4,10 +4,10 @@
  * using mysqli_connect instead
  */
 
-$databaseHost = 'localhost';
-$databaseName = 'interview';
-$databaseUsername = 'root';
-$databasePassword = 'root';
+$databaseHost = 'interview-prep.cnzplictbexa.us-east-1.rds.amazonaws.com';
+$databaseName = 'interview-prep';
+$databaseUsername = 'admin';
+$databasePassword = 'admin123';
 
 $mysqli = mysqli_connect($databaseHost, 
 $databaseUsername, $databasePassword, $databaseName); 

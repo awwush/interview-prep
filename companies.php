@@ -45,10 +45,14 @@
     <h1 style="font-family:georgia">Top Companies</h1>
     <br/>
 <?php 
-$username = "root"; 
-$password = "root"; 
-$database = "interview"; 
-$mysqli = new mysqli("localhost", $username, $password, $database); 
+// $username = "admin"; 
+// $password = "admin123"; 
+// $database = "interview-prep"; 
+// $mysqli = new mysqli("interview-prep.cnzplictbexa.us-east-1.rds.amazonaws.com", $username, $password, $database); 
+
+//including the database connection file
+include_once("config.php");
+
 $query = "SELECT * FROM companies";
 
 

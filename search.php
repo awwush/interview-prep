@@ -52,14 +52,14 @@ if(isset($_GET["submit"]))
 $search = $_GET["search"];
 
 
-$con = mysqli_connect('localhost', 'root', 'root');
+$con = mysqli_connect('interview-prep.cnzplictbexa.us-east-1.rds.amazonaws.com', 'admin', 'admin123');
 #echo "test2";
 if(!$con)
 {
     die('Connection Failed'.mysqli_error());
 }
 # "test3";
-mysqli_select_db($con,"interview");
+mysqli_select_db($con,"interview-prep");
 $query = "Select * from companies WHERE Name LIKE '%$search%' ";
 $result = mysqli_query($con,$query) or die(mysqli_error($con));
 $count = mysqli_num_rows($result);

@@ -54,14 +54,15 @@ if(isset($_POST["cid"]))
 $id = $_POST["cid"];
 
 
-$con = mysqli_connect('localhost', 'root', 'root');
+$con = mysqli_connect('interview-prep.cnzplictbexa.us-east-1.rds.amazonaws.com', 'admin', 'admin123');
 //echo "test2";
 if(!$con)
 {
     die('Connection Failed'.mysqli_error());
 }
 //"test3";
-mysqli_select_db($con,"interview");
+mysqli_select_db($con,"interview-prep");
+
 $query = "SELECT * FROM q where cid = '$id'";
 $result = mysqli_query($con,$query) or die(mysqli_error($con));
 $count = mysqli_num_rows($result);

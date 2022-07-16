@@ -56,14 +56,14 @@ if(isset($_POST["Submit"]))
 $email = $_POST["email"];
 $pswd = $_POST["psw"];
 
-$con = mysqli_connect('localhost', 'root', 'root');
+$con = mysqli_connect('interview-prep.cnzplictbexa.us-east-1.rds.amazonaws.com', 'admin', 'admin123');
 #echo "test2";
 if(!$con)
 {
     die('Connection Failed'.mysqli_error());
 }
 # "test3";
-mysqli_select_db($con,"interview");
+mysqli_select_db($con,"interview-prep");
 $query = "Select * from customer WHERE User_id='$email'";
 $result = mysqli_query($con,$query) or die(mysqli_error($con));
 $row = $result->fetch_assoc();

@@ -12,9 +12,11 @@
 <?php
 //including the database connection file
 include_once("config.php");
+
 #echo "test1";
+
 if(isset($_POST['Submit'])) {	
-	#echo "test2";d
+	#echo "test2";
 	$name = mysqli_real_escape_string($mysqli, $_POST['name']);
 	$email = mysqli_real_escape_string($mysqli, $_POST['email']);
 	$pswd = mysqli_real_escape_string($mysqli, $_POST['psw']);
@@ -44,21 +46,22 @@ if(isset($_POST['Submit'])) {
 		}
 		
 		//link to the previous page
-		echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
+		#echo "<br/><a href='javascript:self.history.back();'>Go Back</a>";
 	} else { 
 		// if all the fields are filled (not empty) 
-		//	#echo "test3";
+		#echo "test3";
 		//insert data to database	
 		$result = mysqli_query($mysqli,"INSERT INTO customer VALUES('$name','$email','$pswd','$add','$phone')");
-		//echo "test 3";
+		#echo "test4";
 		//display success message
-	}
-}
-?>
-<div class="container signin">
-    <h1 style="font-family:sans-serif; color:#0099ff;font-size:300%"><center><br><br>You have registered successfully<br><a href="signin.html"><br><button class="a" style="padding:5px; background-color: #008CBA; 
+		echo'<div class="container signin">
+<h1 style="font-family:sans-serif; color:#0099ff;font-size:300%"><center><br><br>You have registered successfully<br><a href="signin.html"><br><button class="a" style="padding:5px; background-color: #008CBA; 
   color: white; 
   border: 2px solid #008CBA; border-radius:6px; font-size: 20px;box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);transform: translateY(4px);">Sign in</button></a></center></h1>
-  </div>
+  </div>';
+	}
+
+}
+?>
 </body>
 </html>

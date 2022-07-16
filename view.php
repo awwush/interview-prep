@@ -80,10 +80,13 @@
 session_start();
 
 //connecting to database 
-$username = "root"; 
-$password = "root"; 
-$database = "interview"; 
-$mysqli = new mysqli("localhost", $username, $password, $database);
+// $username = "root"; 
+// $password = "root"; 
+// $database = "interview"; 
+// $mysqli = new mysqli("localhost", $username, $password, $database);
+
+//including the database connection file
+include_once("config.php");
 
 //initialize global variables
 $field1name = "Name";
