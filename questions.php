@@ -86,7 +86,7 @@ while($row = mysqli_fetch_assoc($sldt))
     echo '<tr> 
         <td ><b>'.$field1name.'</b></td> 
         
-        <td><form action="index.html" method="post">
+        <td><form action="dashboard.html" method="post">
         <input type="hidden" value="'.$id.'" name = "cid">
         <input class="w3-button w3-green" type="submit" value="Attempt">
         </form></td>
